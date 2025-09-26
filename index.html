@@ -1,12 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- SEO Meta Tags Optimizadas -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="" />
-    <meta name="author" content="webthemez" />
-    <title>Gym</title>
-    <link rel="shortcut icon" href="images/logo.png" />
+
+    <!-- Título optimizado para SEO -->
+    <title>
+      GymPro Costa Rica - Gimnasio Premium | Entrenamiento Personal y Fitness
+    </title>
+
+    <!-- Meta descripción optimizada -->
+    <meta
+      name="description"
+      content="Gimnasio premium en Costa Rica. Entrenamiento personal, clases grupales, equipos de última generación. Transforma tu cuerpo con nuestros entrenadores certificados. ¡Prueba gratis!"
+    />
+
+    <!-- Palabras clave -->
+    <meta
+      name="keywords"
+      content="gimnasio costa rica, entrenamiento personal, fitness, gym san jose, clases grupales, cardio, musculación, crossfit"
+    />
+
+    <!-- Meta tags adicionales para SEO -->
+    <meta name="author" content="CaldeseioWebProyects" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://www.gympro-costarica.com" />
+
+    <!-- Open Graph para redes sociales -->
+    <meta property="og:title" content="GymPro Costa Rica - Gimnasio Premium" />
+    <meta
+      property="og:description"
+      content="Transforma tu cuerpo en el mejor gimnasio de Costa Rica. Entrenamiento personal y clases grupales."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.gympro-costarica.com" />
+    <meta
+      property="og:image"
+      content="https://www.gympro-costarica.com/images/og-image.jpg"
+    />
+    <meta property="og:locale" content="es_CR" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="GymPro Costa Rica - Gimnasio Premium" />
+    <meta
+      name="twitter:description"
+      content="Transforma tu cuerpo en el mejor gimnasio de Costa Rica"
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.gympro-costarica.com/images/twitter-image.jpg"
+    />
+
+    <!-- Favicon optimizado -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon-16x16.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/apple-touch-icon.png"
+    />
 
     <!-- Bootstrap 5 -->
     <link
@@ -31,6 +95,47 @@
     <!-- Original styles -->
     <link href="css/prettyPhoto.css" rel="stylesheet" />
     <link href="css/styles.css" rel="stylesheet" />
+
+    <!-- JSON-LD Structured Data para SEO -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Gym",
+        "name": "GymPro Costa Rica",
+        "description": "Gimnasio premium con entrenamiento personal y clases grupales en Costa Rica",
+        "url": "https://www.gympro-costarica.com",
+        "telephone": "+506-83391192",
+        "email": "luiscalderontcit@gmail.com",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "CR",
+          "addressRegion": "San José",
+          "addressLocality": "San José"
+        },
+        "openingHours": "Mo-Fr 06:00-22:00, Sa-Su 08:00-20:00",
+        "priceRange": "$45-$185",
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Servicios de Fitness",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Entrenamiento Personal"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Clases Grupales"
+              }
+            }
+          ]
+        }
+      }
+    </script>
 
     <style>
       /* Modern Overrides */
@@ -533,21 +638,20 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="hero-banner">
+    <section id="hero-banner" role="banner">
       <div class="floating-elements">
         <div class="floating-element"></div>
         <div class="floating-element"></div>
         <div class="floating-element"></div>
       </div>
-
       <div class="container">
         <div class="hero-content">
           <h1 class="hero-title" id="heroTitle">
-            Más fuerte que <span style="color: #f9690e">NUNCA</span>
+            Más fuerte que <span style="color: #ff6b6b">NUNCA</span>
           </h1>
           <p class="hero-subtitle" id="heroSubtitle">
             Transforma tu cuerpo, mente y vida con nuestros programas de
-            entrenamiento expertos
+            entrenamiento expertos en el mejor gimnasio de Costa Rica
           </p>
           <button class="btn hero-btn" id="heroBtn">Comienza Ahora</button>
         </div>
@@ -679,7 +783,7 @@
       id="about"
       class="section"
       style="
-        background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+        background: linear-gradient(rgba(0, 0, 0, 0.26), rgba(0, 0, 0, 0)),
           url('images/img2.jpg');
         background-attachment: fixed;
         background-size: cover;
@@ -900,7 +1004,7 @@
       id="gallery"
       class="section"
       style="
-        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        background: linear-gradient(rgba(0, 0, 0, 0.171), rgba(0, 0, 0, 0.7)),
           url('images/img4.jpg');
         background-attachment: fixed;
         background-size: cover;
@@ -1251,7 +1355,7 @@
     <section
       class="section"
       style="
-        background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+        background: linear-gradient(rgba(0, 0, 0, 0.219), rgba(0, 0, 0, 0.8)),
           url('images/img3.jpg');
         background-attachment: fixed;
         background-size: cover;
@@ -2081,3 +2185,35 @@
     </style>
   </body>
 </html>
+
+<!-- Schema.org adicional para SEO local -->
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "@id": "https://www.gympro-costarica.com",
+    "name": "GymPro Costa Rica",
+    "image": "https://www.gympro-costarica.com/images/logo.png",
+    "description": "El mejor gimnasio premium de Costa Rica con entrenadores certificados",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "San José Centro",
+      "addressLocality": "San José",
+      "addressRegion": "San José",
+      "postalCode": "10101",
+      "addressCountry": "CR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "9.9281",
+      "longitude": "-84.0907"
+    },
+    "telephone": "+50683391192",
+    "openingHours": ["Mo-Fr 05:00-23:00", "Sa 06:00-22:00", "Su 07:00-21:00"],
+    "priceRange": "$45-$185",
+    "sameAs": [
+      "https://www.facebook.com/gympro-costarica",
+      "https://www.instagram.com/gympro_costarica"
+    ]
+  }
+</script>
