@@ -595,7 +595,7 @@
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg fixed-top">
-      <div class="container">
+      <div class="container" id="miDiv">
         <a class="navbar-brand" href="#home">
           <img src="images/logo.png" alt="logo" height="40" />
         </a>
@@ -1821,8 +1821,7 @@
           social_tools: false,
         });
       });
-
-      // Parallax effect for hero section
+// Parallax effect for hero section
       window.addEventListener("scroll", () => {
         const scrolled = window.pageYOffset;
         const hero = document.getElementById("hero-banner");
@@ -1831,6 +1830,7 @@
           hero.style.transform = `translateY(${rate}px)`;
         }
       });
+      
 
       // Floating elements animation
       anime({
@@ -2216,4 +2216,23 @@
       "https://www.instagram.com/gympro_costarica"
     ]
   }
+</script>
+
+<script>
+  function ajustarClaseSegunTamaño() {
+    const div = document.getElementById('miDiv');
+    const anchoLimite = 768; // Puedes cambiar este valor según tu necesidad
+
+    if (window.innerWidth < anchoLimite) {
+      div.classList.remove('container');
+    } else {
+      div.classList.add('container');
+    }
+  }
+
+  // Ejecutar al cargar la página
+  window.addEventListener('load', ajustarClaseSegunTamaño);
+
+  // Ejecutar cada vez que se redimensiona la ventana
+  window.addEventListener('resize', ajustarClaseSegunTamaño);
 </script>
