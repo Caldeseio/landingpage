@@ -497,6 +497,19 @@
         }
       }
 
+      @media (max-width: 768px) {
+        html,
+        body {
+          overflow-x: hidden;
+        }
+
+        .navbar {
+          width: 100%;
+          max-width: 100vw;
+          box-sizing: border-box;
+        }
+      }
+
       /* Gallery Hover Effects */
       .portfolio-item {
         border-radius: 15px;
@@ -1821,7 +1834,7 @@
           social_tools: false,
         });
       });
-// Parallax effect for hero section
+      // Parallax effect for hero section
       window.addEventListener("scroll", () => {
         const scrolled = window.pageYOffset;
         const hero = document.getElementById("hero-banner");
@@ -1830,7 +1843,6 @@
           hero.style.transform = `translateY(${rate}px)`;
         }
       });
-      
 
       // Floating elements animation
       anime({
@@ -2219,20 +2231,20 @@
 </script>
 
 <script>
-  function ajustarClaseSegunTamaño() {
-    const div = document.getElementById('miDiv');
-    const anchoLimite = 768; // Puedes cambiar este valor según tu necesidad
+  //function ajustarClaseSegunTamaño() {
+  //const div = document.getElementById('miDiv');
+  //const anchoLimite = 768; // Puedes cambiar este valor según tu necesidad
 
-    if (window.innerWidth < anchoLimite) {
-      div.classList.remove('container');
-    } else {
-      div.classList.add('container');
-    }
-  }
+  //if (window.innerWidth < anchoLimite) {
+  //  div.classList.remove('container');
+  //} else {
+  //  div.classList.add('container');
+  //}
+  //}
 
   // Ejecutar al cargar la página
-  window.addEventListener('load', ajustarClaseSegunTamaño);
+  //window.addEventListener('load', ajustarClaseSegunTamaño);
 
   // Ejecutar cada vez que se redimensiona la ventana
-  window.addEventListener('resize', ajustarClaseSegunTamaño);
+  //window.addEventListener('resize', ajustarClaseSegunTamaño);
 </script>
